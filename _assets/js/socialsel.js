@@ -21,16 +21,12 @@ tgrSocial["domReady"] = () => {
     var socialLinks = document.querySelectorAll("#links a")
     for (var i = 0; i < socialLinks.length; i++)
     {
-        console.log(socialLinks[i])
         socialLinks[i].addEventListener("mouseenter", tgrSocial.mouseOver)
         socialLinks[i].addEventListener("mouseleave", tgrSocial.mouseOut )
     }
 
     // Reference the query selector for later use
     tgrSocial["textEl"] = document.querySelector("#links .text")
-
-    // Say hello
-    console.log("Ｈｉ！私はロレッシュ・二スターです。")
 }
 
 // When the document is ready
